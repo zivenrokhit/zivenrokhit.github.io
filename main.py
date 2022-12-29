@@ -181,7 +181,7 @@ app = Flask(__name__)
 
 @app.route("/start", methods=["POST", "GET"])
 def start():
-    return render_template("start.html")
+    return render_template("index.html")
 
 
 @app.route("/encrypt", methods=["POST", "GET"])     
