@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<body>
+  <div>
+    <h3>Please input the ciphertext aswell as the 
+      corresponding 'd' and 'n' values for which you would like to decrypt with
+    </h3>
+    <form action="" method="GET">
+      <input placeholder="Enter CipherText..." name="C"/>
+      <input placeholder="d value" name="d"/>
+      <input placeholder="n value" name="n"/>
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+
+    <p>Your message is: {{decrypted_message}}</p>
+    
+    <form action= "/encrypt" method="POST">
+      <button type="submit">Click to encrypt</button>
+    </form>
+    <form action= "/start" method="POST">
+      <button type="submit">Home</button>
+    </form>
+  </body>
+
+ 
