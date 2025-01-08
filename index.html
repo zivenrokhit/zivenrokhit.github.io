@@ -115,7 +115,7 @@
               class="col-md-2 col-sm-2 col-xs-6"
               style="margin: 10px; z-index: 9999"
             >
-              <a href="mailto:zrokhit@uwaterloo.ca" target="_blank">
+              <a href="mailto:zrokhit@uwaterloo.ca">
                 <i
                   class="contact-icon fa fa-envelope fa-5x"
                   style="color: #fff"
@@ -202,17 +202,26 @@
           <div class="col-md-8">
             <div class="about-description">
               <b><h3>About Me</h3></b>
-              <hr />
+              <hr style="border: 1px solid gray; width: 75%" />
               <p>
-                Hello! I'm currently a Mathematics and Computer Science student
-                at the University of Waterloo who loves learning about new
-                software technologies and design. Ever since I was exposed to
-                web development in elementary school, my passion for software
-                have grown tremendously throughout the years. <br /><br />
-                As a hobby, I like to read, draw, and give back to the community
-                by volunteering at local events and being one of the leaders of
-                a student group called .devClub. In the future, I hope to create
-                some projects that shows people the beauty behind design.
+                Hello, my name is Ziven! I'm a Mathematics and Computer Science
+                student at the University of Waterloo, and an experienced
+                Software Engineer. I've worked with companies like Ford Motors,
+                TD Bank, and various tech startups where I learned how to ship
+                scalable, quality software. <br /><br />Recently, I founded
+                <a
+                  href="https://www.courseclutch.com"
+                  target="”_blank”"
+                  style="color: blue"
+                  >Course Clutch</a
+                >, a platform dedicated to helping university students secure
+                seats in full courses. Building Course Clutch has been an
+                incredible journey, allowing me to continuously explore new
+                technologies and enhance my engineering skills. <br /><br />An
+                exciting upcoming adventure is my exchange study term to
+                Edinburgh, Scotland. In September of 2025 I'll be spending 4
+                months with the University of Heriot Watt.<br /><br />
+                If you have any questions, I'd love to chat!<br /><br />-Z
               </p>
             </div>
           </div>
@@ -224,7 +233,7 @@
     <div class="skills padding" id="skills">
       <div class="container" style="font-family: 'Open Sans'">
         <b><h3>Skills</h3></b>
-        <hr />
+        <hr style="border: 1px solid gray; width: 75%" />
         <div class="row">
           <div class="col-md-4 col-sm-4">
             <center>
@@ -289,33 +298,105 @@
 
         <div class="row">
           <div>
-            <!-- Music Visualizer -->
+            <!-- Course Clutch -->
             <div class="col-md-5">
               <center>
                 <img
-                  src="assets/images/visualizer.png"
-                  alt="Music Visualizer"
+                  src="assets/images/courseclutch.png"
+                  alt="Course Clutch"
                   class="img-responsive"
+                  style="border: 1px solid black"
                 />
               </center>
             </div>
             <div class="col-md-7">
-              <b><h3>Music Visualizer</h3></b>
+              <b><h3>Course Clutch</h3></b>
               <hr />
               <p>
-                Dynamically displays a visual effect that is responsive to an
-                audio track with dynamic interfaces
+                A live platform that notifies students when a seat becomes
+                available in their desired course. Complete with a Stripe
+                integration and hosted with a complex AWS architecture.
               </p>
+              <h5>
+                Made with: Python, FastAPI, TypeScript, React, AWS (EC2, Lambda,
+                DynamoDB), Docker
+              </h5>
+              <br />
+              <p>
+                <a href="https://www.courseclutch.com" target="_blank">Demo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <div class="row">
+          <div>
+            <!-- Toronto Crime Prediction Model -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/map.png"
+                  alt="Toronto Map"
+                  class="img-responsive"
+                  style="border: 1px solid black"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>Toronto Crime Prediction Model</h3></b>
+              <hr />
+              <p>
+                Retrieves crime data from the official Toronto Police API,
+                processes it to create a spatial map, and applies several
+                machine learning models to the data for analysis and prediction.
+              </p>
+              <h5>Made with: Python, Pandas, HTML/CSS</h5>
               <br />
               <p>
                 <a
-                  href="https://jennifertran.github.io/MusicVisualizer/"
+                  href="https://github.com/zivenrokhit/Toronto_crime_data_project"
                   target="_blank"
-                  >Demo</a
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div>
+            <!-- RSA-2048 Encryption Site -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/encryption.png"
+                  alt="RSA-2048 Encryption Site"
+                  class="img-responsive"
+                  style="border: 1px solid black"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>RSA-2048 Encryption Site</h3></b>
+              <hr />
+              <p>
+                A web application that enables clients to encrypt and decrypt
+                messages through a user-friendly interface. The encryption is
+                powered by a custom RSA implementation that I developed with
+                guidance from my algebra professor at the University of
+                Waterloo.
+              </p>
+              <h5>Made with: Python, Advanced Algebra Concepts, HTML/CSS</h5>
+              <br />
+              <p>
+                <a href="https://ziven.pythonanywhere.com/" target="_blank"
+                  >Demo (may need to click 2x to let server load)</a
                 >
                 |
                 <a
-                  href="https://github.com/jennifertran/MusicVisualizer"
+                  href="https://github.com/zivenrokhit/RSA-Web-App"
                   target="_blank"
                   >Source</a
                 >
@@ -328,34 +409,30 @@
 
         <div class="row">
           <div>
-            <!-- Search Engine Award -->
+            <!-- Chess -->
             <div class="col-md-5">
               <center>
                 <img
-                  src="assets/images/searchengineaward.png"
-                  alt="Search Engine Award"
+                  src="assets/images/chess.png"
+                  alt="Chess in C++"
                   class="img-responsive"
+                  style="border: 1px solid black"
                 />
               </center>
             </div>
             <div class="col-md-7">
-              <b><h3>Search Engine Award</h3></b>
+              <b><h3>Low-level Chess</h3></b>
               <hr />
               <p>
-                An improved version of the University of Manitoba's Award's
-                Database, made for an Industry Project
+                A chess engine built from scratch in C++ with a CPU opponent.
+                The engine is designed to handle chess game logic, evaluate
+                positions, and play against a human player.
               </p>
+              <h5>Made with: C++, Makefile</h5>
+
               <br />
               <p>
-                <a
-                  href="https://searchengineaward.herokuapp.com/"
-                  target="_blank"
-                  >Demo</a
-                >
-                |
-                <a
-                  href="https://github.com/jennifertran/SearchEngineAward"
-                  target="_blank"
+                <a href="https://github.com/zivenrokhit/chess" target="_blank"
                   >Source</a
                 >
               </p>
@@ -367,27 +444,30 @@
 
         <div class="row">
           <div>
-            <!-- Travelers -->
+            <!-- StockBuddy Chrome Extension -->
             <div class="col-md-5">
               <center>
                 <img
-                  src="assets/images/travelers.jpg"
-                  alt="Travelers"
+                  src="assets/images/stock.png"
+                  alt="StockBuddy Chrome Extension"
                   class="img-responsive"
+                  style="border: 1px solid black"
                 />
               </center>
             </div>
             <div class="col-md-7">
-              <b><h3>Travelers</h3></b>
+              <b><h3>StockBuddy Chrome Extension</h3></b>
               <hr />
               <p>
-                A booking application that allows users to book for flights, car
-                rentals, and hotels
+                A Chrome extension that allows users to conveniently look up
+                real-time stock information using the AlphaVantage API.
               </p>
+              <h5>Made with: JavaScript, HTML/CSS</h5>
+
               <br />
               <p>
                 <a
-                  href="https://github.com/jennifertran/Travelers"
+                  href="https://github.com/zivenrokhit/stockBuddy"
                   target="_blank"
                   >Source</a
                 >
@@ -395,197 +475,34 @@
             </div>
           </div>
         </div>
-
         <br />
 
         <div class="row">
           <div>
-            <!-- Dev Match -->
+            <!-- Arduino Traffic Light -->
             <div class="col-md-5">
               <center>
                 <img
-                  src="assets/images/DevMatch.png"
-                  alt="Dev Match"
+                  src="assets/images/traffic.png"
+                  alt="StockBuddy Chrome Extension"
                   class="img-responsive"
+                  style="border: 1px solid black"
                 />
               </center>
             </div>
             <div class="col-md-7">
-              <b><h3>Dev Match</h3></b>
+              <b><h3>Arduino Traffic Light</h3></b>
               <hr />
               <p>
-                A Ruby on Rails app that allows entrepreneurs and developers
-                meetup. Features include a user interface, login/logout system
-                with authentication, email notifications, and subscription
-                payments for premium services
+                A fully functional traffic light built with Arduino, featuring
+                synchronized LED lights, sensors, and circuitry.
               </p>
-              <br />
-              <p>
-                <a href="https://dev-match1.herokuapp.com/" target="_blank"
-                  >Demo</a
-                >
-                |
-                <a
-                  href="https://github.com/jennifertran/DevMatch"
-                  target="_blank"
-                  >Source</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
+              <h5>Made with: Arduino, C++</h5>
 
-        <br />
-
-        <div class="row">
-          <div>
-            <!-- JavaScript 30 -->
-            <div class="col-md-5">
-              <center>
-                <img
-                  src="assets/images/JavaScript30.png"
-                  alt="JavaScript30"
-                  class="img-responsive"
-                />
-              </center>
-            </div>
-            <div class="col-md-7">
-              <b><h3>JavaScript 30</h3></b>
-              <hr />
-              <p>
-                A coding challenge that builds 30 different projects in 30 days.
-                Used HTML, CSS, JavaScript
-              </p>
               <br />
               <p>
                 <a
-                  href="https://jennifertran.github.io/JavaScript30/"
-                  target="_blank"
-                  >Demo</a
-                >
-                |
-                <a
-                  href="https://github.com/jennifertran/JavaScript30"
-                  target="_blank"
-                  >Source</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <br />
-
-        <div class="row">
-          <div>
-            <!-- MiniProjects -->
-            <div class="col-md-5">
-              <center>
-                <img
-                  src="assets/images/MiniProjects.png"
-                  alt="Mini Projects"
-                  class="img-responsive"
-                />
-              </center>
-            </div>
-            <div class="col-md-7">
-              <b><h3>Mini Projects</h3></b>
-              <hr />
-              <p>
-                A collection of experimental web projects ranging from 3D
-                graphics to simple UI interfaces
-              </p>
-              <br />
-              <p>
-                <a
-                  href="https://jennifertran.github.io/MiniProjects/"
-                  target="_blank"
-                  >Demo</a
-                >
-                |
-                <a
-                  href="https://github.com/jennifertran/MiniProjects"
-                  target="_blank"
-                  >Source</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <br />
-
-        <div class="row">
-          <div>
-            <!-- Space Simulator -->
-            <div class="col-md-5">
-              <center>
-                <img
-                  src="assets/images/space.png"
-                  alt="Space Simulator in VR"
-                  class="img-responsive"
-                />
-              </center>
-            </div>
-            <div class="col-md-7">
-              <b><h3>Space Simulator in VR</h3></b>
-              <hr />
-              <p>
-                An outer space environment in WebVR using the framework A-Frame.
-                Created during MLH Local Hack Day 2016
-              </p>
-              <br />
-              <p>
-                <a
-                  href="https://jennifertran.github.io/space-simulator/"
-                  target="_blank"
-                  >Demo</a
-                >
-                |
-                <a
-                  href="https://github.com/jennifertran/space-simulator"
-                  target="_blank"
-                  >Source</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <br />
-
-        <div class="row">
-          <div>
-            <!-- Online Ordering System -->
-            <div class="col-md-5">
-              <center>
-                <img
-                  src="assets/images/OnlineOrder.png"
-                  alt="Online Ordering System"
-                  class="img-responsive"
-                />
-              </center>
-            </div>
-            <div class="col-md-7">
-              <center>
-                <b><h3>Online Ordering System</h3></b>
-              </center>
-              <hr />
-              <p>
-                A web application that allows customers to order food from
-                various resturants. Used HTML, CSS, JavaScript, jQuery, and
-                BootStrap
-              </p>
-              <br />
-              <p>
-                <a
-                  href="https://jennifertran.github.io/online-ordering-system/"
-                  target="_blank"
-                  >Demo</a
-                >
-                |
-                <a
-                  href="https://github.com/jennifertran/online-ordering-system"
+                  href="https://github.com/zivenrokhit/Traffic-Light"
                   target="_blank"
                   >Source</a
                 >
@@ -600,7 +517,7 @@
     <div class="contact padding" id="contact">
       <div class="container">
         <b><h3>Contact Me</h3></b>
-        <hr />
+        <hr style="border: 1px solid gray; width: 75%" />
         <div
           class="row"
           style="
@@ -612,7 +529,7 @@
           "
         >
           <div class="col-md-2 col-sm-2 col-xs-6" style="margin: 10px">
-            <a href="mailto:zrokhit@uwaterloo.ca" target="_blank">
+            <a href="mailto:zrokhit@uwaterloo.ca">
               <i class="contact-icon fa fa-envelope fa-5x"></i>
             </a>
             <br />
