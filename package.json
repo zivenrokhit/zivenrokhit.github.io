@@ -1,0 +1,10 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jennifertran/jennifertran.github.io.git",
+    "license": "MIT License"
+  },
+  "dependencies": {
+    "particlesjs": "^2.0.2"
+  }
+}

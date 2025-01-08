@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!-- Means we are using HTML 5 -->
+<!-- Shows that the site is english so Google can translate easier -->
+<html lang="en">
+  <head>
+    <title>Ziven Rokhit</title>
+    <meta charset="utf-8" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/clouds.ico" />
+
+    <!-- Links to other files -->
+    <link rel="stylesheet" href="assets/main.css" />
+
+    <!-- Bootstrap and Font-awesome CDN's -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <!--Makes sure it's being viewed properly-->
+    <!-- user-scalable doesn't allow ppl to zoom in on mobile-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-91312617-1", "auto");
+      ga("send", "pageview");
+    </script>
+  </head>
+
+  <!-- APIS -->
+
+  <!-- Backup Font if custom one fails -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat"
+    rel="stylesheet"
+    type="text/css"
+  />
+
+  <!-- The overlay -->
+  <div id="myNav" class="overlay">
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#about" onclick="closer()">About</a>
+      <a href="#skills" onclick="closer()">Skills</a>
+      <a href="#projects" onclick="closer()">Projects</a>
+      <a
+        href="https://jennifertran.github.io/MiniProjects/"
+        onclick="closer()"
+        target="_blank"
+        >Mini Projects</a
+      >
+      <a href="#contact" onclick="closer()">Contact</a>
+    </div>
+  </div>
+
+  <!-- Where all the content goes.. -->
+  <body>
+    <!-- Header -->
+    <div class="header vertical-center">
+      <!-- <a id="hamburger-icon" href="#" title="Menu" onclick="openNav()">
+        <span class="line line-1" style="color: #fff"></span>
+        <span class="line line-2" style="color: #fff"></span>
+        <span class="line line-3" style="color: #fff"></span>
+      </a> -->
+
+      <div class="container-fluid">
+        <div class="center">
+          <strong><h1>ZIVEN ROKHIT</h1></strong>
+          <h2>Software Engineer & Math Student at UWaterloo</h2>
+          <div
+            class="row"
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              text-align: center;
+              color: #fff;
+            "
+          >
+            <div
+              class="col-md-2 col-sm-2 col-xs-6"
+              style="margin: 10px; z-index: 9999"
+            >
+              <a href="mailto:zrokhit@uwaterloo.ca" target="_blank">
+                <i
+                  class="contact-icon fa fa-envelope fa-5x"
+                  style="color: #fff"
+                ></i>
+              </a>
+              <br />
+              <p>Email</p>
+            </div>
+
+            <div
+              class="col-md-2 col-sm-2 col-xs-6"
+              style="margin: 10px; z-index: 9999"
+            >
+              <a
+                href="https://www.linkedin.com/in/zivenrokhit/"
+                target="_blank"
+              >
+                <i
+                  class="contact-icon fa fa-linkedin fa-5x"
+                  style="color: #fff"
+                ></i>
+              </a>
+              <br />
+              <p>Linkedin</p>
+            </div>
+            <div
+              class="col-md-2 col-sm-2 col-xs-6"
+              style="margin: 10px; z-index: 9999"
+            >
+              <a href="assets/resume.pdf" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="contact-icon"
+                  style="width: 5em; height: 5em; color: #fff"
+                >
+                  <path
+                    d="M6 2C4.895 2 4 2.895 4 4v16c0 1.105.895 2 2 2h12c1.105 0 2-.895 2-2V8l-6-6H6zm7 1.414L18.586 7H14V3.414zM6 4h6v5h5v11H6V4z"
+                  />
+                </svg>
+              </a>
+              <br />
+              <p>Resume</p>
+            </div>
+
+            <div
+              class="col-md-2 col-sm-2 col-xs-6"
+              style="margin: 10px; z-index: 9999"
+            >
+              <a href="https://github.com/zivenrokhit" target="_blank">
+                <i
+                  class="contact-icon fa fa-github fa-5x"
+                  style="color: #fff"
+                ></i>
+              </a>
+              <br />
+              <p>Github</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas class="background"> </canvas>
+    </div>
+
+    <!-- About page -->
+    <div class="about padding" id="about">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="col-md-4">
+            <div class="profile">
+              <!-- Alt is used if the image is not loading -->
+              <center>
+                <img
+                  src="assets/images/profile.jpg"
+                  id="portPic"
+                  alt="Simple icon"
+                  class="img-responsives img-circle"
+                />
+              </center>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="about-description">
+              <b><h3>About Me</h3></b>
+              <hr />
+              <p>
+                Hello! I'm currently a Mathematics and Computer Science student
+                at the University of Waterloo who loves learning about new
+                software technologies and design. Ever since I was exposed to
+                web development in elementary school, my passion for software
+                have grown tremendously throughout the years. <br /><br />
+                As a hobby, I like to read, draw, and give back to the community
+                by volunteering at local events and being one of the leaders of
+                a student group called .devClub. In the future, I hope to create
+                some projects that shows people the beauty behind design.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills padding" id="skills">
+      <div class="container" style="font-family: 'Open Sans'">
+        <b><h3>Skills</h3></b>
+        <hr />
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <center>
+              <i class="contact-icon fa fa-gear fa-3x"></i>
+              <strong><h4>Programming Languages</h4></strong>
+            </center>
+            <ul>
+              <li>Python</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>C</li>
+              <li>C++</li>
+              <li>HTML/CSS</li>
+            </ul>
+            <br />
+          </div>
+
+          <div class="col-md-4 col-sm-4">
+            <center>
+              <i class="contact-icon fa fa-window-maximize fa-3x"></i>
+              <strong><h4>Frameworks</h4></strong>
+            </center>
+            <ul>
+              <li>React</li>
+              <li>Express</li>
+              <li>NextJS</li>
+              <li>FastAPI</li>
+              <li>Flask</li>
+              <li>Pandas</li>
+              <li>Spring</li>
+            </ul>
+            <br />
+          </div>
+
+          <div class="col-md-4 col-sm-4">
+            <center>
+              <i class="contact-icon fa fa-cloud fa-3x"></i>
+              <strong><h4>Other</h4></strong>
+            </center>
+            <ul>
+              <li>AWS (EC2, ECS, Lambda)</li>
+              <li>Docker</li>
+              <li>Tekton</li>
+              <li>Node</li>
+              <li>Git</li>
+              <li>SQL</li>
+              <li>Linux</li>
+            </ul>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects padding" id="projects">
+      <div class="container">
+        <b><h3>Projects</h3></b>
+        <hr />
+        <br />
+
+        <div class="row">
+          <div>
+            <!-- Music Visualizer -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/visualizer.png"
+                  alt="Music Visualizer"
+                  class="img-responsive"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>Music Visualizer</h3></b>
+              <hr />
+              <p>
+                Dynamically displays a visual effect that is responsive to an
+                audio track with dynamic interfaces
+              </p>
+              <br />
+              <p>
+                <a
+                  href="https://jennifertran.github.io/MusicVisualizer/"
+                  target="_blank"
+                  >Demo</a
+                >
+                |
+                <a
+                  href="https://github.com/jennifertran/MusicVisualizer"
+                  target="_blank"
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div>
+            <!-- Search Engine Award -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/searchengineaward.png"
+                  alt="Search Engine Award"
+                  class="img-responsive"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>Search Engine Award</h3></b>
+              <hr />
+              <p>
+                An improved version of the University of Manitoba's Award's
+                Database, made for an Industry Project
+              </p>
+              <br />
+              <p>
+                <a
+                  href="https://searchengineaward.herokuapp.com/"
+                  target="_blank"
+                  >Demo</a
+                >
+                |
+                <a
+                  href="https://github.com/jennifertran/SearchEngineAward"
+                  target="_blank"
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div>
+            <!-- Travelers -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/travelers.jpg"
+                  alt="Travelers"
+                  class="img-responsive"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>Travelers</h3></b>
+              <hr />
+              <p>
+                A booking application that allows users to book for flights, car
+                rentals, and hotels
+              </p>
+              <br />
+              <p>
+                <a
+                  href="https://github.com/jennifertran/Travelers"
+                  target="_blank"
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div>
+            <!-- Dev Match -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/DevMatch.png"
+                  alt="Dev Match"
+                  class="img-responsive"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>Dev Match</h3></b>
+              <hr />
+              <p>
+                A Ruby on Rails app that allows entrepreneurs and developers
+                meetup. Features include a user interface, login/logout system
+                with authentication, email notifications, and subscription
+                payments for premium services
+              </p>
+              <br />
+              <p>
+                <a href="https://dev-match1.herokuapp.com/" target="_blank"
+                  >Demo</a
+                >
+                |
+                <a
+                  href="https://github.com/jennifertran/DevMatch"
+                  target="_blank"
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div>
+            <!-- JavaScript 30 -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/JavaScript30.png"
+                  alt="JavaScript30"
+                  class="img-responsive"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>JavaScript 30</h3></b>
+              <hr />
+              <p>
+                A coding challenge that builds 30 different projects in 30 days.
+                Used HTML, CSS, JavaScript
+              </p>
+              <br />
+              <p>
+                <a
+                  href="https://jennifertran.github.io/JavaScript30/"
+                  target="_blank"
+                  >Demo</a
+                >
+                |
+                <a
+                  href="https://github.com/jennifertran/JavaScript30"
+                  target="_blank"
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div>
+            <!-- MiniProjects -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/MiniProjects.png"
+                  alt="Mini Projects"
+                  class="img-responsive"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>Mini Projects</h3></b>
+              <hr />
+              <p>
+                A collection of experimental web projects ranging from 3D
+                graphics to simple UI interfaces
+              </p>
+              <br />
+              <p>
+                <a
+                  href="https://jennifertran.github.io/MiniProjects/"
+                  target="_blank"
+                  >Demo</a
+                >
+                |
+                <a
+                  href="https://github.com/jennifertran/MiniProjects"
+                  target="_blank"
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div>
+            <!-- Space Simulator -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/space.png"
+                  alt="Space Simulator in VR"
+                  class="img-responsive"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>Space Simulator in VR</h3></b>
+              <hr />
+              <p>
+                An outer space environment in WebVR using the framework A-Frame.
+                Created during MLH Local Hack Day 2016
+              </p>
+              <br />
+              <p>
+                <a
+                  href="https://jennifertran.github.io/space-simulator/"
+                  target="_blank"
+                  >Demo</a
+                >
+                |
+                <a
+                  href="https://github.com/jennifertran/space-simulator"
+                  target="_blank"
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div>
+            <!-- Online Ordering System -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/OnlineOrder.png"
+                  alt="Online Ordering System"
+                  class="img-responsive"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <center>
+                <b><h3>Online Ordering System</h3></b>
+              </center>
+              <hr />
+              <p>
+                A web application that allows customers to order food from
+                various resturants. Used HTML, CSS, JavaScript, jQuery, and
+                BootStrap
+              </p>
+              <br />
+              <p>
+                <a
+                  href="https://jennifertran.github.io/online-ordering-system/"
+                  target="_blank"
+                  >Demo</a
+                >
+                |
+                <a
+                  href="https://github.com/jennifertran/online-ordering-system"
+                  target="_blank"
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact padding" id="contact">
+      <div class="container">
+        <b><h3>Contact Me</h3></b>
+        <hr />
+        <div
+          class="row"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+          "
+        >
+          <div class="col-md-2 col-sm-2 col-xs-6" style="margin: 10px">
+            <a href="mailto:zrokhit@uwaterloo.ca" target="_blank">
+              <i class="contact-icon fa fa-envelope fa-5x"></i>
+            </a>
+            <br />
+            <p>Email</p>
+          </div>
+
+          <div class="col-md-2 col-sm-2 col-xs-6" style="margin: 10px">
+            <a href="https://www.linkedin.com/in/zivenrokhit/" target="_blank">
+              <i class="contact-icon fa fa-linkedin fa-5x"></i>
+            </a>
+            <br />
+            <p>Linkedin</p>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-6" style="margin: 10px">
+            <a href="assets/resume.pdf" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="contact-icon"
+                style="width: 5em; height: 5em"
+              >
+                <path
+                  d="M6 2C4.895 2 4 2.895 4 4v16c0 1.105.895 2 2 2h12c1.105 0 2-.895 2-2V8l-6-6H6zm7 1.414L18.586 7H14V3.414zM6 4h6v5h5v11H6V4z"
+                />
+              </svg>
+            </a>
+            <br />
+            <p>Resume</p>
+          </div>
+
+          <div class="col-md-2 col-sm-2 col-xs-6" style="margin: 10px">
+            <a href="https://github.com/zivenrokhit" target="_blank">
+              <i class="contact-icon fa fa-github fa-5x"></i>
+            </a>
+            <br />
+            <p>Github</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer header">
+      <div class="container">
+        <footer>
+          <p style="font-size: 8px; color: #a9a9a9">© 2017 by Jennifer Tran</p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Imports jquery,bootstrap, and javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
