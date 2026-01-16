@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<!-- Means we are using HTML 5 -->
-<!-- Shows that the site is english so Google can translate easier -->
 <html lang="en">
   <head>
     <title>Ziven Rokhit</title>
     <meta charset="utf-8" />
 
-    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/clouds.ico" />
 
-    <!-- Links to other files -->
     <link rel="stylesheet" href="assets/main.css" />
 
-    <!-- Bootstrap and Font-awesome CDN's -->
     <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,14 +21,11 @@
       crossorigin="anonymous"
     />
 
-    <!--Makes sure it's being viewed properly-->
-    <!-- user-scalable doesn't allow ppl to zoom in on mobile-->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
 
-    <!-- Google Analytics -->
     <script>
       (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
@@ -60,21 +52,15 @@
     </script>
   </head>
 
-  <!-- APIS -->
-
-  <!-- Backup Font if custom one fails -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat"
     rel="stylesheet"
     type="text/css"
   />
 
-  <!-- The overlay -->
   <div id="myNav" class="overlay">
-    <!-- Overlay content -->
     <div class="overlay-content">
       <a href="#about" onclick="closer()">About</a>
-      <a href="#skills" onclick="closer()">Skills</a>
       <a href="#projects" onclick="closer()">Projects</a>
       <a
         href="https://jennifertran.github.io/MiniProjects/"
@@ -86,16 +72,8 @@
     </div>
   </div>
 
-  <!-- Where all the content goes.. -->
   <body>
-    <!-- Header -->
     <div class="header vertical-center">
-      <!-- <a id="hamburger-icon" href="#" title="Menu" onclick="openNav()">
-        <span class="line line-1" style="color: #fff"></span>
-        <span class="line line-2" style="color: #fff"></span>
-        <span class="line line-3" style="color: #fff"></span>
-      </a> -->
-
       <div class="container-fluid">
         <div class="center">
           <strong><h1>ZIVEN ROKHIT</h1></strong>
@@ -200,48 +178,33 @@
       <canvas class="background"> </canvas>
     </div>
 
-    <!-- About page -->
     <div class="about padding" id="about">
       <div class="row">
         <div class="container-fluid">
-          <!-- <div class="col-md-4"> -->
-          <!-- <div class="profile"> -->
-          <!-- Alt is used if the image is not loading -->
-          <!-- <center>
-                <img
-                  src="assets/images/profile.jpg"
-                  id="portPic"
-                  alt="Simple icon"
-                  class="img-responsives img-circle"
-                />
-              </center> -->
-          <!-- </div> -->
-          <!-- </div> -->
           <div style="display: flex; width: 100%; justify-content: center">
             <div class="col-md-8">
               <div class="about-description">
                 <b><h3>About Me</h3></b>
                 <hr style="border: 1px solid gray; width: 75%" />
                 <p>
-                  Hello, my name is Ziven! I'm a Mathematics and Computer
-                  Science student at the University of Waterloo, and an
-                  experienced Software Engineer. I've worked with companies like
-                  Ford Motors, TD Bank, and various tech startups where I
-                  learned how to ship scalable, quality software.
-                  <br /><br />Recently, I founded
+                  Hey, I'm Ziven! I am a 4th year Mathematics and Computer
+                  Science student at the University of Waterloo, graduating in
+                  April 2027.
+                  <br /><br />
+                  I love building software that scales. My experience spans the
+                  entire stack, from designing backend infrastructure on the AWS
+                  Step Functions team to shipping full-stack applications at
+                  Ford, TD Bank, and Doctalk. I also founded
                   <a
                     href="https://www.courseclutch.com"
-                    target="”_blank”"
+                    target="_blank"
                     style="color: blue"
                     >Course Clutch</a
-                  >, a platform dedicated to helping university students secure
-                  seats in full courses. Building Course Clutch has been an
-                  incredible journey, allowing me to continuously explore new
-                  technologies and enhance my engineering skills. <br /><br />An
-                  exciting upcoming adventure is my exchange study term to
-                  Edinburgh, Scotland. This fall I'll be spending 4 months
-                  studying Computer Science at the University of Heriot Watt.<br /><br />
-                  If you have any questions, I'd love to chat!<br /><br />-Z
+                  >
+                  to solve real problems for students using modern web tech.
+                  <br /><br />
+                  I am currently looking for Summer and Fall 2026 internships
+                  where I can keep solving interesting technical challenges.
                 </p>
               </div>
             </div>
@@ -250,67 +213,6 @@
       </div>
     </div>
 
-    <!-- Skills -->
-    <div class="skills padding" id="skills">
-      <div class="container" style="font-family: 'Open Sans'">
-        <b><h3>Skills</h3></b>
-        <hr style="border: 1px solid gray; width: 75%" />
-        <div class="row">
-          <div class="col-md-4 col-sm-4">
-            <center>
-              <i class="contact-icon fa fa-gear fa-3x"></i>
-              <strong><h4>Programming Languages</h4></strong>
-            </center>
-            <ul>
-              <li>Python</li>
-              <li>TypeScript</li>
-              <li>JavaScript</li>
-              <li>Java</li>
-              <li>C</li>
-              <li>C++</li>
-              <li>HTML/CSS</li>
-            </ul>
-            <br />
-          </div>
-
-          <div class="col-md-4 col-sm-4">
-            <center>
-              <i class="contact-icon fa fa-window-maximize fa-3x"></i>
-              <strong><h4>Frameworks</h4></strong>
-            </center>
-            <ul>
-              <li>React</li>
-              <li>Express</li>
-              <li>NextJS</li>
-              <li>FastAPI</li>
-              <li>Flask</li>
-              <li>Pandas</li>
-              <li>Spring</li>
-            </ul>
-            <br />
-          </div>
-
-          <div class="col-md-4 col-sm-4">
-            <center>
-              <i class="contact-icon fa fa-cloud fa-3x"></i>
-              <strong><h4>Other</h4></strong>
-            </center>
-            <ul>
-              <li>AWS (EC2, ECS, Lambda)</li>
-              <li>Docker</li>
-              <li>Tekton</li>
-              <li>Node</li>
-              <li>Git</li>
-              <li>SQL</li>
-              <li>Linux</li>
-            </ul>
-            <br />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects -->
     <div class="projects padding" id="projects">
       <div class="container">
         <b><h3>Projects</h3></b>
@@ -319,7 +221,6 @@
 
         <div class="row">
           <div>
-            <!-- Course Clutch -->
             <div class="col-md-5">
               <center>
                 <img
@@ -351,9 +252,93 @@
         </div>
 
         <br />
+
         <div class="row">
           <div>
-            <!-- Toronto Crime Prediction Model -->
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/sales.png"
+                  alt="AI Sales Leads Generator"
+                  class="img-responsive"
+                  style="border: 1px solid black"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>AI Sales Leads Generator</h3></b>
+              <hr />
+              <p>
+                An intelligent curation tool that leverages LLMs to identify and
+                rank high-quality sales leads. It scrapes web data, stores
+                semantic embeddings in a vector database, and allows users to
+                find relevant companies using natural language queries.
+              </p>
+              <h5>
+                Made with: Python, LangChain, OpenAI, Pinecone, React, Next.js,
+                Vercel
+              </h5>
+              <br />
+              <p>
+                <a href="https://ai-sales-curation.vercel.app/" target="_blank"
+                  >Demo</a
+                >
+                |
+                <a
+                  href="https://github.com/zivenrokhit/ai_sales_curation"
+                  target="_blank"
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div>
+            <div class="col-md-5">
+              <center>
+                <img
+                  src="assets/images/encryption.png"
+                  alt="RSA-2048 Encryption Site"
+                  class="img-responsive"
+                  style="border: 1px solid black"
+                />
+              </center>
+            </div>
+            <div class="col-md-7">
+              <b><h3>RSA-2048 Encryption Site</h3></b>
+              <hr />
+              <p>
+                A web application that enables clients to encrypt and decrypt
+                messages through a user-friendly interface. The encryption is
+                powered by a custom RSA implementation that I developed with
+                guidance from my algebra professor at the University of
+                Waterloo.
+              </p>
+              <h5>Made with: Python, Advanced Algebra Concepts, HTML/CSS</h5>
+              <br />
+              <p>
+                <a href="https://ziven.pythonanywhere.com/" target="_blank"
+                  >Demo</a
+                >
+                |
+                <a
+                  href="https://github.com/zivenrokhit/RSA-Web-App"
+                  target="_blank"
+                  >Source</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div>
             <div class="col-md-5">
               <center>
                 <img
@@ -384,53 +369,11 @@
             </div>
           </div>
         </div>
-        <br />
-
-        <div class="row">
-          <div>
-            <!-- RSA-2048 Encryption Site -->
-            <div class="col-md-5">
-              <center>
-                <img
-                  src="assets/images/encryption.png"
-                  alt="RSA-2048 Encryption Site"
-                  class="img-responsive"
-                  style="border: 1px solid black"
-                />
-              </center>
-            </div>
-            <div class="col-md-7">
-              <b><h3>RSA-2048 Encryption Site</h3></b>
-              <hr />
-              <p>
-                A web application that enables clients to encrypt and decrypt
-                messages through a user-friendly interface. The encryption is
-                powered by a custom RSA implementation that I developed with
-                guidance from my algebra professor at the University of
-                Waterloo.
-              </p>
-              <h5>Made with: Python, Advanced Algebra Concepts, HTML/CSS</h5>
-              <br />
-              <p>
-                <a href="https://ziven.pythonanywhere.com/" target="_blank"
-                  >Demo (may need to click 2x to let server load)</a
-                >
-                |
-                <a
-                  href="https://github.com/zivenrokhit/RSA-Web-App"
-                  target="_blank"
-                  >Source</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
 
         <br />
 
         <div class="row">
           <div>
-            <!-- Chess -->
             <div class="col-md-5">
               <center>
                 <img
@@ -465,7 +408,6 @@
 
         <div class="row">
           <div>
-            <!-- StockBuddy Chrome Extension -->
             <div class="col-md-5">
               <center>
                 <img
@@ -500,7 +442,6 @@
 
         <div class="row">
           <div>
-            <!-- Arduino Traffic Light -->
             <div class="col-md-5">
               <center>
                 <img
@@ -534,7 +475,6 @@
       </div>
     </div>
 
-    <!-- Contact -->
     <div class="contact padding" id="contact">
       <div class="container">
         <b><h3>Contact Me</h3></b>
@@ -611,7 +551,6 @@
       </a>
     </div>
 
-    <!--Footer-->
     <div class="footer header">
       <div class="container">
         <footer>
@@ -620,7 +559,6 @@
       </div>
     </div>
 
-    <!-- Imports jquery,bootstrap, and javascript -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
